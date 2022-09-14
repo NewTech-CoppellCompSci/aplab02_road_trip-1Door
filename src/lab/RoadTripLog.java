@@ -38,7 +38,7 @@ public class RoadTripLog {
 	
 	public double getMPG() {
 		mpg = distance/fuel;
-		return Math.round(mpg * 100 ) / 100 ;
+		return Math.floor(mpg * 100 ) / 100 ;
 		
 	}
 	
