@@ -5,7 +5,7 @@ public class RoadTripLog {
 	public String name;
 	public double fuel;
 	public double distance;
-
+	public double mpg;
 	public RoadTripLog(String name) {
 		this.name = name; // creates the variables
 		this.distance = 0;
@@ -37,7 +37,8 @@ public class RoadTripLog {
 	}
 	
 	public double getMPG() {
-		return distance / fuel;
+		mpg = distance/fuel;
+		return Math.round(mpg * 100 ) / 100 ;
 		
 	}
 	
@@ -47,8 +48,7 @@ public class RoadTripLog {
 		return "Trip: " + name + 
 			"\n Distance: " + getTotalDistance() + 
 			"\nFuel Used: " + getTotalFuel() + 
-			"\nMPG: " + getMPG();
-		
+			"\nMPG: "  + getMPG();
 	}
 	
 	
