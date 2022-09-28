@@ -2,7 +2,7 @@ package lab;
 
 public class RoadTripLog {
 
-	public String name; //variebles
+	public String name; //variables
 	public double fuel;
 	public double distance;
 	public double mpg;
